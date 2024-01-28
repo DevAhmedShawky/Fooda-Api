@@ -1,0 +1,147 @@
+/* Start Global Rules */
+.c-pointer {
+  cursor: pointer;
+}
+
+body {
+  overflow: hidden;
+  background-color: black;
+}
+
+/* ////////////Start Change Width && Color Of Scrollbar///////////// */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  box-shadow: 0 0 10px #ddd;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1bc4d0;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+/* ////////////End Change Width && Color Of Scrollbar///////////// */
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: auto;
+  }
+}
+/* ////////////Start Loading Screen///////////// */
+.loader {
+  width: fit-content;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 30px;
+  padding: 0 5px 8px 0;
+  background: repeating-linear-gradient(90deg, currentColor 0 8%, #0000 0 10%)
+    200% 100%/200% 3px no-repeat;
+  animation: l3 2s steps(6) infinite;
+}
+.loader:before {
+  content: "Loading...";
+}
+@keyframes l3 {
+  to {
+    background-position: 80% 100%;
+  }
+}
+
+.loading-screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  z-index: 999999999999;
+}
+/* ////////////End Loading Screen///////////// */
+/* End Global Rules */
+
+/* Start Nabbar Secition */
+.nave-menu {
+  left: -256.562px;
+  z-index: 99999999;
+}
+
+.nav-header .logo {
+  width: 50px;
+}
+
+.nav-tab .nav-links li {
+  top: 300px;
+}
+
+.parent .img-info {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 100%;
+  left: 0;
+  background-color: #f9f6f6ca;
+  transition: 0.6s;
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -ms-transition: 0.6s;
+  -o-transition: 0.6s;
+}
+
+.image:hover .img-info {
+  top: 0;
+}
+
+@media (max-width: 767px) {
+  .parent {
+    width: 75%;
+    margin: auto;
+  }
+
+  .parent .container {
+    width: 125%;
+  }
+}
+/* End Nabbar Secition */
+
+.form-control,
+.form-control:focus {
+  background-color: transparent;
+}
+
+.form-control:focus {
+  color: #fff;
+}
+
+.idIngredient-name {
+  min-height: 58px;
+}
+
+.form-control {
+  color: #fff;
+}
+
+.btn-up {
+  bottom: 20px;
+  right: 20px;
+  background-color: #1bc4d0;
+  width: 30px;
+  height: 30px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  display: none;
+}
+
+.btn-up:hover {
+  box-shadow: 0 0 10px #45f3ff;
+}
